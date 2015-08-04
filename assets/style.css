@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+@font-face {
+  font-family : icomoon;
+  font-style  : italic;
+  src         : url(icomoon.woff);
+}
+
+html {
+  font-size   : 1.5em;
+  line-height : 1.42;
+  -webkit-text-size-adjust : 100%;
+}
+
+body {
+  margin : 0;
+}
+
+h1, h2, h3, dl, ul, p {
+  font-family : sans-serif;
+  font-weight : 300;
+}
+
+address {
+  font-style : normal;
+}
+
+a { text-decoration : none; }
+a:hover { text-decoration : underline; }
+
+body > header {
+  background-color    : crimson;
+  background-image    : url(logo.png);
+  background-position : center;
+  background-repeat   : no-repeat;
+  background-size     : contain;
+  height              : 350px;
+}
+
+body > header > h1 {
+  display : none;
+}
+
+body > header > a {
+  position   : absolute;
+      top    : 0;
+      left   : 0;
+  width      : 100%;
+  height     : 350px;
+}
+
+main {
+  margin-left   : 5vw;
+  margin-right  : 5vw;
+}
+
+main > header {
+  align-items   : end;
+  display       : flex;
+}
+
+main > header > img {
+  border-color  : white;
+  border-radius : 50%;
+  border-style  : solid;
+  flex-shrink   : 0;
+  margin-top    : -100px;
+}
+
+main > header * {
+  margin-bottom : auto;
+  margin-top    : auto;
+}
+
+main dl > dt {
+  float : left;
+  width : 4.5rem;
+}
+
+main dl > dd:before {
+  content : ": ";
+}
+
+.im {
+  display       : inline-block;
+  font-family   : "icomoon";
+  text-align    : center;
+  width         : 1.3rem;
+}
+
+.im > span {
+  display : none;
+}
+
+.im-archlinux { color: #1793d1; }
+.im-archlinux:before { content: "\e900"; }
+
+.im-discord { color: #7289da; }
+.im-discord:before { content: "\e901"; }
+
+.im-facebook { color: #3b5998; }
+.im-facebook:before { content: "\e902"; }
+
+.im-github { color : #24292e; }
+.im-github:before { content: "\e903"; }
+
+.im-gmail { color: #d14836; }
+.im-gmail:before { content: "\e904"; }
+
+.im-instagram { color: #e4405f; }
+.im-instagram:before { content: "\e905"; }
+
+.im-line { color: #00c300; }
+.im-line:before { content: "\e906"; }
+
+.im-mobile { color : #24292e; }
+.im-mobile:before { content: "\e907"; }
+
+.im-twitter { color: #1da1f2; }
+.im-twitter:before { content: "\e908"; }
