@@ -79,7 +79,7 @@ main > header * {
 
 main dl > dt {
   float : left;
-  width : 4.5rem;
+  width : 8.5rem;
 }
 
 main dl > dd:before {
