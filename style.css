@@ -1,7 +1,7 @@
 @import url("//fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=M+PLUS+1p:wght@300&display=swap");
 
 @font-face {
-  font-family : icomoon;
+  font-family : "icomoon";
   font-style  : italic;
   src         : url("fonts/icomoon.woff") format("woff");
 }
@@ -35,11 +35,12 @@ a:hover { text-decoration : underline; }
 
 body > header {
   background-color    : crimson;
-  background-image    : url(assets/logo.png);
+  background-image    : url("assets/logo.png");
   background-position : center;
   background-repeat   : no-repeat;
   background-size     : contain;
   height              : 350px;
+  position            : relative;
 }
 
 body > header > h1 {
@@ -47,7 +48,7 @@ body > header > h1 {
 }
 
 body > header > a {
-  height   : 350px;
+  height   : 100%;
   position : absolute;
       left : 0;
       top  : 0;
@@ -70,6 +71,7 @@ main > header > img {
   border-style  : solid;
   flex-shrink   : 0;
   margin-top    : -100px;
+  z-index       : 0;
 }
 
 main > header * {
