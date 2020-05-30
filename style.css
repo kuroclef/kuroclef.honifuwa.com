@@ -1,37 +1,21 @@
 @import url("//fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=M+PLUS+1p:wght@300&display=swap");
 
-@font-face {
-  font-family : "icomoon";
-  font-style  : italic;
-  src         : url("fonts/icomoon.woff") format("woff");
-}
-
 html {
-  font-size   : 1.5em;
-  line-height : 1.42;
+  font : 1.5em/1.42 sans-serif;
+  -moz-text-size-adjust    : 100%;
   -webkit-text-size-adjust : 100%;
 }
 
-body {
-  margin : 0;
-}
-
-h1, h2, h3 {
-  font-family : "Open Sans", "M PLUS 1p", sans-serif;
-  font-weight : 300;
-}
-
-a, dl, ol, p, ul {
-  font-family : "Open Sans", "M PLUS 1p", sans-serif;
-  font-weight : 300;
-}
-
-address {
-  font-style : normal;
-}
-
-a { text-decoration : none; }
+a       { text-decoration : none;      }
 a:hover { text-decoration : underline; }
+address { font-style      : normal;    }
+body    { margin          : 0;         }
+img     { vertical-align  : bottom;    }
+
+a, dl, h1, h2, h3, h4, h5, h6, ol, p, ul {
+  font-family : "Open Sans", "M PLUS 1p", sans-serif;
+  font-weight : 300;
+}
 
 body > header {
   background-color    : crimson;
@@ -61,8 +45,7 @@ main {
 }
 
 main > header {
-  align-items : end;
-  display     : flex;
+  display : flex;
 }
 
 main > header > img {
@@ -79,13 +62,10 @@ main > header * {
   margin-top    : auto;
 }
 
-main dl > dt {
-  float : left;
-  width : 8.5rem;
-}
-
-main dl > dd:before {
-  content : ": ";
+@font-face {
+  font-family : "icomoon";
+  font-style  : italic;
+  src         : url("fonts/icomoon.woff") format("woff");
 }
 
 .im {
@@ -95,33 +75,22 @@ main dl > dd:before {
   width       : 1.3rem;
 }
 
-.im > span {
-  display : none;
-}
-
-.im-archlinux { color: #1793d1; }
-.im-archlinux:before { content: "\e900"; }
-
-.im-discord { color: #7289da; }
-.im-discord:before { content: "\e901"; }
-
-.im-facebook { color: #3b5998; }
-.im-facebook:before { content: "\e902"; }
-
-.im-github { color : #24292e; }
-.im-github:before { content: "\e903"; }
-
-.im-gmail { color: #d14836; }
-.im-gmail:before { content: "\e904"; }
-
-.im-instagram { color: #e4405f; }
-.im-instagram:before { content: "\e905"; }
-
-.im-line { color: #00c300; }
-.im-line:before { content: "\e906"; }
-
-.im-mobile { color : #24292e; }
-.im-mobile:before { content: "\e907"; }
-
-.im-twitter { color: #1da1f2; }
-.im-twitter:before { content: "\e908"; }
+.im > span           { display : none;    }
+.im-archlinux        { color   : #1793d1; }
+.im-archlinux:before { content : "\e900"; }
+.im-discord          { color   : #7289da; }
+.im-discord:before   { content : "\e901"; }
+.im-facebook         { color   : #3b5998; }
+.im-facebook:before  { content : "\e902"; }
+.im-github           { color   : #24292e; }
+.im-github:before    { content : "\e903"; }
+.im-gmail            { color   : #d14836; }
+.im-gmail:before     { content : "\e904"; }
+.im-instagram        { color   : #e4405f; }
+.im-instagram:before { content : "\e905"; }
+.im-line             { color   : #00c300; }
+.im-line:before      { content : "\e906"; }
+.im-mobile           { color   : #24292e; }
+.im-mobile:before    { content : "\e907"; }
+.im-twitter          { color   : #1da1f2; }
+.im-twitter:before   { content : "\e908"; }
