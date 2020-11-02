@@ -1,6 +1,3 @@
-/*@import url("//fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=M+PLUS+1p:wght@300&display=swap");
- */
-
 html {
   font : 1.5em/1.42 sans-serif;
   -moz-text-size-adjust    : 100%;
@@ -14,11 +11,11 @@ body    { margin          : 0;         }
 img     { vertical-align  : bottom;    }
 
 a, dl, h1, h2, h3, h4, h5, h6, ol, p, ul {
-  font-family : /*"Open Sans", "M PLUS 1p",*/ system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family : system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight : 300;
 }
 
-body > header {
+#body-header {
   background-color    : crimson;
   background-image    : url("images/logo.png");
   background-position : center;
@@ -28,11 +25,11 @@ body > header {
   position            : relative;
 }
 
-body > header > h1 {
+#body-header > h1 {
   display : none;
 }
 
-body > header > a {
+#body-header > a {
   height   : 100%;
   position : absolute;
       left : 0;
@@ -45,20 +42,18 @@ main {
   margin-right : 5vw;
 }
 
-main > header {
+#main-header {
   display : flex;
 }
 
-main > header > img {
-  border-color  : white;
+#main-header > img {
   border-radius : 50%;
-  border-style  : solid;
   flex-shrink   : 0;
   margin-top    : -100px;
   z-index       : 0;
 }
 
-main > header * {
+#main-header * {
   margin-bottom : auto;
   margin-top    : auto;
 }
@@ -69,29 +64,29 @@ main > header * {
   src         : url("fonts/icomoon.woff") format("woff");
 }
 
-.im {
+i {
   display     : inline-block;
   font-family : "icomoon";
   text-align  : center;
   width       : 1.3rem;
 }
 
-.im > span           { display : none;    }
-.im-archlinux        { color   : #1793d1; }
-.im-archlinux:before { content : "\e900"; }
-.im-discord          { color   : #7289da; }
-.im-discord:before   { content : "\e901"; }
-.im-facebook         { color   : #3b5998; }
-.im-facebook:before  { content : "\e902"; }
-.im-github           { color   : #24292e; }
-.im-github:before    { content : "\e903"; }
-.im-gmail            { color   : #d14836; }
-.im-gmail:before     { content : "\e904"; }
-.im-instagram        { color   : #e4405f; }
-.im-instagram:before { content : "\e905"; }
-.im-line             { color   : #00c300; }
-.im-line:before      { content : "\e906"; }
-.im-mobile           { color   : #24292e; }
-.im-mobile:before    { content : "\e907"; }
-.im-twitter          { color   : #1da1f2; }
-.im-twitter:before   { content : "\e908"; }
+i > span          { display : none;    }
+#archlinux        { color   : #1793d1; }
+#archlinux:before { content : "\e900"; }
+#discord          { color   : #7289da; }
+#discord:before   { content : "\e901"; }
+#facebook         { color   : #3b5998; }
+#facebook:before  { content : "\e902"; }
+#github           { color   : #24292e; }
+#github:before    { content : "\e903"; }
+#gmail            { color   : #d14836; }
+#gmail:before     { content : "\e904"; }
+#instagram        { color   : #e4405f; }
+#instagram:before { content : "\e905"; }
+#line             { color   : #00c300; }
+#line:before      { content : "\e906"; }
+#mobile           { color   : #24292e; }
+#mobile:before    { content : "\e907"; }
+#twitter          { color   : #1da1f2; }
+#twitter:before   { content : "\e908"; }
