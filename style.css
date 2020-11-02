@@ -20,7 +20,7 @@ a, dl, h1, h2, h3, h4, h5, h6, ol, p, ul {
 
 body > header {
   background-color    : crimson;
-  background-image    : url("assets/logo.png");
+  background-image    : url("images/logo.png");
   background-position : center;
   background-repeat   : no-repeat;
   background-size     : contain;
