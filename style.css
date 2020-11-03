@@ -10,14 +10,14 @@ address { font-style      : normal;    }
 body    { margin          : 0;         }
 img     { vertical-align  : bottom;    }
 
-a, dl, h1, h2, h3, h4, h5, h6, ol, p, ul {
+a, dl, h1, h2, h3, h4, h5, h6, ol, p, td, ul {
   font-family : system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight : 300;
 }
 
 #body-header {
   background-color    : crimson;
-  background-image    : url("images/logo.png");
+  background-image    : url("logo.png");
   background-position : center;
   background-repeat   : no-repeat;
   background-size     : contain;
@@ -61,7 +61,7 @@ main {
 @font-face {
   font-family : "icomoon";
   font-style  : italic;
-  src         : url("fonts/icomoon.woff") format("woff");
+  src         : url("icomoon.woff") format("woff");
 }
 
 i {
