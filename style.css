@@ -4,26 +4,29 @@ html {
   -webkit-text-size-adjust : 100%;
 }
 
-a       { color           : blue;      }
-a       { text-decoration : none;      }
+a       { color           : #1da1f2;   }
 a:hover { text-decoration : underline; }
-address { font-style      : normal;    }
 body    { margin          : 0;         }
 img     { vertical-align  : bottom;    }
 
 a, dl, h1, h2, h3, h4, h5, h6, ol, p, td, ul {
-  font-family : system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight : 300;
+  font-family     : system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style      : normal;
+  font-weight     : 300;
+  text-decoration : none;
+}
+
+@media (prefers-color-scheme : dark) {
+  body {
+    background-color : #15202b;
+    color            : white;
+  }
 }
 
 #body-header {
-  background-color    : crimson;
-  background-image    : url("logo.png");
-  background-position : center;
-  background-repeat   : no-repeat;
-  background-size     : contain;
-  height              : 350px;
-  position            : relative;
+  background : crimson url("logo.png") center/contain no-repeat;
+  height     : 350px;
+  position   : relative;
 }
 
 #body-header > h1 {
@@ -91,3 +94,7 @@ i > span          { display : none;    }
 #mobile:before    { content : "\e907"; }
 #twitter          { color   : #1da1f2; }
 #twitter:before   { content : "\e908"; }
+
+@media (prefers-color-scheme : dark) {
+  #github, #mobile { color : #f0f6fc; }
+}
