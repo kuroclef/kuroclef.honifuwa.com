@@ -1,26 +1,62 @@
+:root {
+  --S_yellow  : #b58900;
+  --S_orange  : #cb4b16;
+  --S_red     : #dc322f;
+  --S_magenta : #d33682;
+  --S_violet  : #6c71c4;
+  --S_blue    : #268bd2;
+  --S_cyan    : #2aa198;
+  --S_green   : #859900;
+
+  --S_base03  : #fdf6e3;
+  --S_base02  : #eee8d5;
+  --S_base01  : #93a1a1;
+  --S_base00  : #839496;
+  --S_base0   : #657b83;
+  --S_base1   : #586e75;
+  --S_base2   : #073642;
+  --S_base3   : #002b36;
+
+  --text-gray : #24292e;
+}
+
+/*
+@media (prefers-color-scheme : dark) {
+:root {
+  --S_base03  : #002b36;
+  --S_base02  : #073642;
+  --S_base01  : #586e75;
+  --S_base00  : #657b83;
+  --S_base0   : #839496;
+  --S_base1   : #93a1a1;
+  --S_base2   : #eee8d5;
+  --S_base3   : #fdf6e3;
+
+  --text-gray : #f6f8fa;
+}}
+*/
+
 html {
   font : 1.5em/1.42 sans-serif;
   -moz-text-size-adjust    : 100%;
   -webkit-text-size-adjust : 100%;
 }
 
-a       { color           : #1da1f2;   }
-a:hover { text-decoration : underline; }
-body    { margin          : 0;         }
-img     { vertical-align  : bottom;    }
+body {
+  background-color : var(--S_base03);
+  color            : var(--S_base0);
+}
+
+a       { color           : var(--S_blue); }
+a:hover { text-decoration : underline;     }
+body    { margin          : 0;             }
+img     { vertical-align  : bottom;        }
 
 a, dl, h1, h2, h3, h4, h5, h6, ol, p, td, ul {
   font-family     : system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-style      : normal;
   font-weight     : 300;
   text-decoration : none;
-}
-
-@media (prefers-color-scheme : dark) {
-  body {
-    background-color : #15202b;
-    color            : white;
-  }
 }
 
 #body-header {
@@ -82,7 +118,7 @@ i > span          { display : none;    }
 #discord:before   { content : "\e901"; }
 #facebook         { color   : #1877f2; }
 #facebook:before  { content : "\e902"; }
-#github           { color   : #24292e; }
+#github           { color   : var(--text-gray); }
 #github:before    { content : "\e903"; }
 #gmail            { color   : #d14836; }
 #gmail:before     { content : "\e904"; }
@@ -90,11 +126,7 @@ i > span          { display : none;    }
 #instagram:before { content : "\e905"; }
 #line             { color   : #00b900; }
 #line:before      { content : "\e906"; }
-#mobile           { color   : #24292e; }
+#mobile           { color   : var(--text-gray); }
 #mobile:before    { content : "\e907"; }
 #twitter          { color   : #1da1f2; }
 #twitter:before   { content : "\e908"; }
-
-@media (prefers-color-scheme : dark) {
-  #github, #mobile { color : #f0f6fc; }
-}
