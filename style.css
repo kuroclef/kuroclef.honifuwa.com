@@ -37,7 +37,7 @@
 */
 
 html {
-  font : 1.5em/1.42 sans-serif;
+  font : 1.5em/1.42 system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   -moz-text-size-adjust    : 100%;
   -webkit-text-size-adjust : 100%;
 }
@@ -47,15 +47,20 @@ body {
   color            : var(--S_base0);
 }
 
-a       { color           : var(--S_blue); }
+a                 { color : var(--S_blue);   }
+h1,h2,h3,h4,h5,h6 { color : var(--S_red);    }
+header            { color : var(--S_orange); }
+td                { color : var(--S_yellow); }
+li                { color : var(--S_cyan);   }
+li > span         { color : var(--S_base0);  }
+
 a:hover { text-decoration : underline;     }
 body    { margin          : 0;             }
 img     { vertical-align  : bottom;        }
 
 a, dl, h1, h2, h3, h4, h5, h6, ol, p, td, ul {
-  font-family     : system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-style      : normal;
-  font-weight     : 300;
+  font-weight     : normal;
   text-decoration : none;
 }
 
