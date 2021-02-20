@@ -43,8 +43,8 @@ html {
 }
 
 body {
-  background-color : var(--S_base03);
-  color            : var(--S_base0);
+  background : var(--S_base03);
+  color      : var(--S_base0);
 }
 
 a                 { color : var(--S_blue);   }
@@ -54,14 +54,21 @@ td                { color : var(--S_yellow); }
 li                { color : var(--S_cyan);   }
 li > span         { color : var(--S_base0);  }
 
-a:hover { text-decoration : underline;     }
-body    { margin          : 0;             }
-img     { vertical-align  : bottom;        }
+a:hover         { text-decoration : underline; }
+body            { margin          : 0;         }
+img             { vertical-align  : bottom;    }
+td:nth-child(1) { text-align      : right;     }
+td:nth-child(2):before { content  : "\2002";   }
 
 a, dl, h1, h2, h3, h4, h5, h6, ol, p, td, ul {
   font-style      : normal;
   font-weight     : normal;
   text-decoration : none;
+}
+
+main {
+  margin-left  : 5vw;
+  margin-right : 5vw;
 }
 
 #body-header {
@@ -82,20 +89,18 @@ a, dl, h1, h2, h3, h4, h5, h6, ol, p, td, ul {
   width    : 100%;
 }
 
-main {
-  margin-left  : 5vw;
-  margin-right : 5vw;
-}
-
 #main-header {
   display : flex;
 }
 
-#main-header > img {
+#main-header > a {
+  flex-shrink : 0;
+  margin-top  : -100px;
+  z-index     : 0;
+}
+
+#main-header img {
   border-radius : 50%;
-  flex-shrink   : 0;
-  margin-top    : -100px;
-  z-index       : 0;
 }
 
 #main-header * {
