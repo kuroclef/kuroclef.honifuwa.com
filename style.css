@@ -72,7 +72,7 @@ main {
 }
 
 #body-header {
-  background : crimson url("logo.png") center/contain no-repeat;
+  background : crimson url("/logo.png") center/contain no-repeat;
   height     : 350px;
   position   : relative;
 }
@@ -111,7 +111,7 @@ main {
 @font-face {
   font-family : "icomoon";
   font-style  : italic;
-  src         : url("icomoon.woff") format("woff");
+  src         : url("/icomoon.woff") format("woff");
 }
 
 i {
