@@ -108,35 +108,20 @@ main {
   margin-top    : auto;
 }
 
-@font-face {
-  font-family : "icomoon";
-  font-style  : italic;
-  src         : url("/icomoon.woff") format("woff");
-}
-
-i {
-  display     : inline-block;
-  font-family : "icomoon";
-  text-align  : center;
-  width       : 1.3rem;
-}
-
 i > span          { display : none;    }
-#archlinux        { color   : #1793d1; }
-#archlinux:before { content : "\e900"; }
 #discord          { color   : #7289da; }
-#discord:before   { content : "\e901"; }
+#discord:before   { content : "\f392"; }
 #facebook         { color   : #1877f2; }
-#facebook:before  { content : "\e902"; }
+#facebook:before  { content : "\f09a"; }
 #github           { color   : var(--text-gray); }
-#github:before    { content : "\e903"; }
-#gmail            { color   : #d14836; }
-#gmail:before     { content : "\e904"; }
+#github:before    { content : "\f09b"; }
 #instagram        { color   : #e4405f; }
-#instagram:before { content : "\e905"; }
+#instagram:before { content : "\f16d"; }
 #line             { color   : #00b900; }
-#line:before      { content : "\e906"; }
+#line:before      { content : "\f3c0"; }
+#mail             { color   : #d14836; }
+#mail:before      { content : "\f0e0"; }
 #mobile           { color   : var(--text-gray); }
-#mobile:before    { content : "\e907"; }
+#mobile:before    { content : "\f3cd"; }
 #twitter          { color   : #1da1f2; }
-#twitter:before   { content : "\e908"; }
+#twitter:before   { content : "\f099"; }
